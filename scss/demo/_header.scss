@@ -1,0 +1,195 @@
+
+/* ----------------------------------------------------------------
+
+	header.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for header. Thanks!
+-----------------------------------------------------------------*/
+
+
+#header {
+	position: relative;	
+
+	// Transparent header
+	&.transparent-header {
+		background-color: black;
+		
+		@include media-breakpoint-up(xl) {
+			background: transparent;
+			z-index: 199;
+		}	
+		
+		& + #banner {
+			@include media-breakpoint-up(xl) {
+				top: -$header-height;
+				margin-bottom: -$header-height;
+				position: relative;
+			}
+		}
+	}
+}
+
+.header-white {
+	background-color: white !important;
+}
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+
+#header-wrap {
+	@include media-breakpoint-up(xl) {
+		padding-left: 10.625rem;
+		padding-right: 10.625rem;
+	}
+	padding-left: 2rem;	
+	padding-right: 2rem;	
+}
+
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+.navbar-brand {
+	margin-right: 3.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	@include media-breakpoint-up(xl) {
+		margin-right: 8.125rem;
+	}
+
+	img {
+		width: 6.5625rem;
+		height: auto;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+	.nav-link {
+		color: $primary-menu-font-color;
+		font-family: $primary-menu-font;
+		font-size: $primary-menu-font-size;
+		font-weight: $primary-menu-font-weight;		
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;
+
+		@include media-breakpoint-up(xl) {
+			line-height: 1;
+			padding: $primary-menu-padding 1.875rem;
+		}
+	}
+
+	.nav-item {
+		&.current,
+		&:hover {
+			a {
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+// Please ignore mega menu now 
+
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+
+
+#top-btns {
+	@include media-breakpoint-up(xl) {
+			margin-left: 16.5rem;
+	}
+
+	.nav-item {
+		margin-right: 1rem;
+
+		@include media-breakpoint-up(xl) {
+			margin-right: 0;
+		}
+	}
+
+	.nav-link {
+		color: $top-btn-font-color;		
+		font-size: $top-btn-font-size;	
+		line-height: 1;
+
+		@include media-breakpoint-up(xl) {
+			padding: 0 0.9375rem;
+		}
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Links
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Social
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Login
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/
+
+
+
+
+
+

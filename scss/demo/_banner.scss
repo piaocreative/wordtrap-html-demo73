@@ -1,0 +1,40 @@
+
+/* ----------------------------------------------------------------
+
+	banner.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Banner
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for banner. Thanks!
+-----------------------------------------------------------------*/
+
+
+#banner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+
+    &.home-banner {
+        background-image: url(../images/banner/home-banner.png);
+        height: 61rem;
+    }
+
+    .banner-wrap {
+        padding-top: 11.875rem;
+        padding-bottom: 9rem;
+    }
+
+    h2 {
+        color: $theme-color;
+        font-style: italic;
+    }
+}

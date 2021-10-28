@@ -1,0 +1,76 @@
+/*-----------------------------------------------------------------------------------
+	utilities.scss
+-----------------------------------------------------------------------------------*/
+
+
+//-------------------- Fonts --------------------//
+
+// Font Family
+.body-font { font-family: $body-font !important; }
+.heading-font { font-family: $heading-font !important; }
+
+// Font Weight
+.fw-medium { font-weight: 500 !important; }
+.fw-semi-bold { font-weight: 600 !important; }
+// Text Color
+.text-black { color: #000 !important; }
+.theme-color { color: $theme-color !important; }
+.third-color { color: $third-color !important; }
+.light { color: $light !important; }
+.text-secondary { color: black !important; opacity: 0.5 !important; }
+.text-blue { color: #3774e3 !important;}
+.text-red { color: #e33737 !important; }
+
+//backgroun -Color
+.bg-white { background-color: white; }
+.bg-red { background-color: #e33737 !important; }
+
+//-------------------- Image --------------------//
+
+img {
+	&.img-full {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+
+		&.img-pos-left {
+			object-position: left;
+		}
+
+		&.img-pos-right {
+			object-position: right;
+		}
+	}
+}
+
+
+//-------------------- Section ------------------//
+
+.section {
+	position: relative;
+	padding-top: $section-spacer;
+	padding-bottom: $section-spacer;
+}
+
+.section-padding-top {
+	padding-top: $section-spacer;
+}
+
+.section-padding-bottom {
+	padding-bottom: $section-spacer;
+}
+
+.section-margin-top {
+	margin-top: $section-spacer;
+}
+
+.section-margin-bottom {
+	margin-bottom: $section-spacer;
+}
+
+// @media (min-width: 1600px) {
+//   .container {
+//     max-width: 1580px !important;
+//   }
+// }

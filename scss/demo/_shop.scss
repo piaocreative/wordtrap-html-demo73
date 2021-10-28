@@ -1,0 +1,109 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: 2rem;
+	position: relative;
+
+	.product-image {
+		position: relative;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			width: 100%;
+			position: relative;
+		}
+
+		> a:nth-of-type(2) {
+			background-color: $white;
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			@include transition(all 0.3s ease-in-out);
+		}
+
+		&:hover {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	.product-title {
+		color: black;	
+		font-weight: 400;
+		line-height: 1;
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+
+	.product-price {
+		color: black;
+		font-family: $body-font;
+		font-size: 1.25rem;
+		font-weight: 400;
+		line-height: 1;
+		display: flex;
+		align-items: center;
+		margin-bottom: $spacer * 0.75;
+
+		del {
+			font-size: $h6-font-size;
+			color: black;
+			margin-left: 0.75rem;
+			font-weight: 400;
+			font-family: $body-font;
+			opacity: 0.5;
+		}
+	}
+
+	.product-categories {
+		color: black;
+		opacity: 0.5;
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1;
+		margin-bottom: 1.25rem !important;
+	}
+
+	.onsale {
+		top: 5%;
+		left: 5%;
+		width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	}
+}
+
