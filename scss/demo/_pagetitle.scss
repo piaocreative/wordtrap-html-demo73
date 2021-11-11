@@ -28,3 +28,32 @@
 		line-height: 1;
 	}
 }
+
+.breadcrumb {
+	color: white;
+	line-height: 1;
+	margin-top: $spacer * 2;
+	margin-bottom: $spacer * 2.5;
+
+	a {
+		display: block;
+		font-size: $h6-font-size;
+		font-family: $body-font;
+		font-weight: 600;
+		margin-right: 1rem;
+		opacity: 0.5;
+
+		&:hover {
+			color: $heading-color;
+			opacity: 1;
+		}
+	}
+
+	.dot {
+		background-color: $heading-color;
+		width: 3px;
+		height: 3px;
+		border-radius: 50%;
+		margin-right: 1rem;
+	}
+}

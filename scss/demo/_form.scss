@@ -32,24 +32,11 @@ textarea {
     }
 }
 
-.form-control {
-    border-bottom: 1px solid #eaeaea;
-    font-size: $h6-font-size;
-    color: white;
-    padding-top: 0;
-    padding-bottom: 1.5rem;
-    padding-left: 0;
-    background-color: transparent;
-
-    &:focus {
-        border-bottom: 1px solid $theme-color;
-        box-shadow: 0 0 0 0;
-    }
-
-    &::placeholder {
-        color: $theme-color;
-        font-size: $h6-font-size;
-        opacity: .5;
-        font-family: $body-font;
+.subscribe-form {
+    input {
+        &::placeholder {
+            color: white;
+            font-size: 1rem;
+        }
     }
 }

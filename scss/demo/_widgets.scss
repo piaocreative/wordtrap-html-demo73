@@ -17,7 +17,6 @@
 
 
 .widget {
-
 	.widget-title {
 		font-size: 1.25rem;
 		font-family: $heading-font;
@@ -65,9 +64,7 @@
 
 				a {
 					color: white;
-					font-weight: 400;
 					font-size: $h6-font-size;
-					font-family: $body-font;
 					transition: all 0.3s ease-in-out;
 					line-height: 1;
 				}

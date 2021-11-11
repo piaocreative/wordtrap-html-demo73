@@ -14,16 +14,12 @@
 .fw-semi-bold { font-weight: 600 !important; }
 // Text Color
 .text-black { color: #000 !important; }
-.theme-color { color: $theme-color !important; }
-.third-color { color: $third-color !important; }
 .light { color: $light !important; }
 .text-secondary { color: black !important; opacity: 0.5 !important; }
-.text-blue { color: #3774e3 !important;}
 .text-red { color: #e33737 !important; }
 
 //backgroun -Color
 .bg-white { background-color: white; }
-.bg-red { background-color: #e33737 !important; }
 
 //-------------------- Image --------------------//
 
@@ -44,6 +40,11 @@ img {
 	}
 }
 
+.bg-cover {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
 //-------------------- Section ------------------//
 
@@ -52,25 +53,3 @@ img {
 	padding-top: $section-spacer;
 	padding-bottom: $section-spacer;
 }
-
-.section-padding-top {
-	padding-top: $section-spacer;
-}
-
-.section-padding-bottom {
-	padding-bottom: $section-spacer;
-}
-
-.section-margin-top {
-	margin-top: $section-spacer;
-}
-
-.section-margin-bottom {
-	margin-bottom: $section-spacer;
-}
-
-// @media (min-width: 1600px) {
-//   .container {
-//     max-width: 1580px !important;
-//   }
-// }

@@ -28,7 +28,7 @@
 			z-index: 199;
 		}	
 		
-		& + #banner {
+		& + #content {
 			@include media-breakpoint-up(xl) {
 				top: -$header-height;
 				margin-bottom: -$header-height;
@@ -38,21 +38,15 @@
 	}
 }
 
-.header-white {
-	background-color: white !important;
-}
-
 /* ----------------------------------------------------------------
 	Sticky Header
 -----------------------------------------------------------------*/
 
 #header-wrap {
-	@include media-breakpoint-up(xl) {
-		padding-left: 10.625rem;
-		padding-right: 10.625rem;
+	@include media-breakpoint-down(lg) {
+		padding-left: 2rem;	
+		padding-right: 2rem;	
 	}
-	padding-left: 2rem;	
-	padding-right: 2rem;	
 }
 
 
@@ -141,7 +135,7 @@
 		}
 
 		&:hover {
-			color: $primary;
+			color: $theme-color;
 		}
 	}
 }

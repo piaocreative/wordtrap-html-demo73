@@ -1,0 +1,16 @@
+.icon-box {
+    display: block;
+    margin-bottom: 1.5rem;
+
+    .icon-header {
+        span {
+            display: block;
+            font-size: 0.875rem;
+        }
+
+        h3 {
+            font-family: $body-font;
+            font-weight: 400;
+        }
+    }
+}
